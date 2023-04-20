@@ -4,7 +4,7 @@
         <li><a href="/account.php">Tài khoản</a></li>
         <li><a href="/login.php">Đăng nhập</a></li>
       </ul>
-      <div class="row">                <div id="content" class="col-sm-9">      <div class="row">
+      <div class="row">                <div id="content" class="col-sm-12">      <div class="row">
         <div class="col-sm-6">
           <div class="well">
             <h2>Khách Hàng Mới</h2>
@@ -31,7 +31,7 @@
               <div class="form-group">
                 <label class="control-label" for="input-password">Mật khẩu</label>
                 <input name="password" value="<?php echo $_SESSION['FAILED_PASSWORD'];?>" placeholder="Password" id="input-password" class="form-control" type="password">
-                <a href="#account/forgotten">Quên mật khẩu</a></div>
+                <a href="#account/forgotten" style="margin-top:5px; display:block">Quên mật khẩu</a></div>
               <input value="Đăng nhập" class="btn btn-primary" type="submit">
               <input type="hidden" name="ru" value="<?php echo $_GET['ru'];?>">
         	  <input type="hidden" name="token" value="<?php echo isset($_GET['token']) ? $_GET['token'] : "";?>">
